@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "RSPACK_CONFIG_VALIDATE=loose-silent docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -40,5 +40,15 @@
   },
   "engines": {
     "node": ">=18.0"
+  },
+  "packageManager": "pnpm@8.14.1+sha1.d039b38e0b20ad012ed548e44267b8d4c88b447a",
+  "pnpm": {
+    "overrides": {
+      "webpack": "npm:@rspack/core@1.0.0-beta.2"
+    },
+    "patchedDependencies": {
+      "@docusaurus/theme-classic@3.4.0": "patches/@docusaurus__theme-classic@3.4.0.patch",
+      "@docusaurus/core@3.4.0": "patches/@docusaurus__core@3.4.0.patch"
+    }
   }
 }
