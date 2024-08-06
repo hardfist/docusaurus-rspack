@@ -47,7 +47,8 @@
       "webpack": "npm:@rspack/core@1.0.0-beta.2"
     },
     "patchedDependencies": {
-      "@docusaurus/theme-classic@3.4.0": "patches/@docusaurus__theme-classic@3.4.0.patch"
+      "@docusaurus/theme-classic@3.4.0": "patches/@docusaurus__theme-classic@3.4.0.patch",
+      "@docusaurus/core@3.4.0": "patches/@docusaurus__core@3.4.0.patch"
     }
   }
 }

@@ -8,6 +8,9 @@ overrides:
   webpack: npm:@rspack/core@1.0.0-beta.2
 
 patchedDependencies:
+  '@docusaurus/core@3.4.0':
+    hash: a5aelqshp3giaj4ub6yosoqi5a
+    path: patches/@docusaurus__core@3.4.0.patch
   '@docusaurus/theme-classic@3.4.0':
     hash: xwsvemiwwscle7sdonkkd4r7be
     path: patches/@docusaurus__theme-classic@3.4.0.patch
@@ -15,7 +18,7 @@ patchedDependencies:
 dependencies:
   '@docusaurus/core':
     specifier: 3.4.0
-    version: 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+    version: 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
   '@docusaurus/preset-classic':
     specifier: 3.4.0
     version: 3.4.0(@algolia/client-search@4.24.0)(@rspack/core@1.0.0-beta.2)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(search-insights@2.16.0)(typescript@5.5.4)
@@ -1631,7 +1634,7 @@ packages:
       - '@algolia/client-search'
     dev: false
 
-  /@docusaurus/core@3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4):
+  /@docusaurus/core@3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4):
     resolution: {integrity: sha512-g+0wwmN2UJsBqy2fQRQ6fhXruoEa62JDeEa5d8IdTJlMoaDaEDfHh7WjwGRn4opuTQWpjAwP/fbcgyHKlE+64w==}
     engines: {node: '>=18.0'}
     hasBin: true
@@ -1729,6 +1732,7 @@ packages:
       - vue-template-compiler
       - webpack-cli
     dev: false
+    patched: true
 
   /@docusaurus/cssnano-preset@3.4.0:
     resolution: {integrity: sha512-qwLFSz6v/pZHy/UP32IrprmH5ORce86BGtN0eBtG75PpzQJAzp9gefspox+s8IEOr0oZKuQ/nhzZ3xwyc3jYJQ==}
@@ -1814,7 +1818,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/logger': 3.4.0
       '@docusaurus/mdx-loader': 3.4.0(@docusaurus/types@3.4.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/types': 3.4.0(react-dom@18.3.1)(react@18.3.1)
@@ -1860,7 +1864,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/logger': 3.4.0
       '@docusaurus/mdx-loader': 3.4.0(@docusaurus/types@3.4.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/module-type-aliases': 3.4.0(react-dom@18.3.1)(react@18.3.1)
@@ -1905,7 +1909,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/mdx-loader': 3.4.0(@docusaurus/types@3.4.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/types': 3.4.0(react-dom@18.3.1)(react@18.3.1)
       '@docusaurus/utils': 3.4.0(@docusaurus/types@3.4.0)(typescript@5.5.4)
@@ -1942,7 +1946,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/types': 3.4.0(react-dom@18.3.1)(react@18.3.1)
       '@docusaurus/utils': 3.4.0(@docusaurus/types@3.4.0)(typescript@5.5.4)
       fs-extra: 11.2.0
@@ -1977,7 +1981,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/types': 3.4.0(react-dom@18.3.1)(react@18.3.1)
       '@docusaurus/utils-validation': 3.4.0(@docusaurus/types@3.4.0)(typescript@5.5.4)
       react: 18.3.1
@@ -2010,7 +2014,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/types': 3.4.0(react-dom@18.3.1)(react@18.3.1)
       '@docusaurus/utils-validation': 3.4.0(@docusaurus/types@3.4.0)(typescript@5.5.4)
       '@types/gtag.js': 0.0.12
@@ -2044,7 +2048,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/types': 3.4.0(react-dom@18.3.1)(react@18.3.1)
       '@docusaurus/utils-validation': 3.4.0(@docusaurus/types@3.4.0)(typescript@5.5.4)
       react: 18.3.1
@@ -2077,7 +2081,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/logger': 3.4.0
       '@docusaurus/types': 3.4.0(react-dom@18.3.1)(react@18.3.1)
       '@docusaurus/utils': 3.4.0(@docusaurus/types@3.4.0)(typescript@5.5.4)
@@ -2115,7 +2119,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/plugin-content-blog': 3.4.0(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/plugin-content-docs': 3.4.0(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/plugin-content-pages': 3.4.0(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
@@ -2168,7 +2172,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/mdx-loader': 3.4.0(@docusaurus/types@3.4.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/module-type-aliases': 3.4.0(react-dom@18.3.1)(react@18.3.1)
       '@docusaurus/plugin-content-blog': 3.4.0(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
@@ -2270,7 +2274,7 @@ packages:
       react-dom: ^18.0.0
     dependencies:
       '@docsearch/react': 3.6.1(@algolia/client-search@4.24.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(search-insights@2.16.0)
-      '@docusaurus/core': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/core': 3.4.0(patch_hash=a5aelqshp3giaj4ub6yosoqi5a)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/logger': 3.4.0
       '@docusaurus/plugin-content-docs': 3.4.0(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/theme-common': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
