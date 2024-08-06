@@ -7,6 +7,11 @@ settings:
 overrides:
   webpack: npm:@rspack/core@1.0.0-beta.2
 
+patchedDependencies:
+  '@docusaurus/theme-classic@3.4.0':
+    hash: xwsvemiwwscle7sdonkkd4r7be
+    path: patches/@docusaurus__theme-classic@3.4.0.patch
+
 dependencies:
   '@docusaurus/core':
     specifier: 3.4.0
@@ -2119,7 +2124,7 @@ packages:
       '@docusaurus/plugin-google-gtag': 3.4.0(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/plugin-google-tag-manager': 3.4.0(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/plugin-sitemap': 3.4.0(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
-      '@docusaurus/theme-classic': 3.4.0(@rspack/core@1.0.0-beta.2)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
+      '@docusaurus/theme-classic': 3.4.0(patch_hash=xwsvemiwwscle7sdonkkd4r7be)(@rspack/core@1.0.0-beta.2)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/theme-common': 3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4)
       '@docusaurus/theme-search-algolia': 3.4.0(@algolia/client-search@4.24.0)(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(search-insights@2.16.0)(typescript@5.5.4)
       '@docusaurus/types': 3.4.0(react-dom@18.3.1)(react@18.3.1)
@@ -2156,7 +2161,7 @@ packages:
       '@types/react': 18.3.3
       react: 18.3.1
 
-  /@docusaurus/theme-classic@3.4.0(@rspack/core@1.0.0-beta.2)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4):
+  /@docusaurus/theme-classic@3.4.0(patch_hash=xwsvemiwwscle7sdonkkd4r7be)(@rspack/core@1.0.0-beta.2)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4):
     resolution: {integrity: sha512-0IPtmxsBYv2adr1GnZRdMkEQt1YW6tpzrUPj02YxNpvJ5+ju4E13J5tB4nfdaen/tfR1hmpSPlTFPvTf4kwy8Q==}
     engines: {node: '>=18.0'}
     peerDependencies:
@@ -2210,6 +2215,7 @@ packages:
       - vue-template-compiler
       - webpack-cli
     dev: false
+    patched: true
 
   /@docusaurus/theme-common@3.4.0(@docusaurus/types@3.4.0)(@rspack/core@1.0.0-beta.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.5.4):
     resolution: {integrity: sha512-0A27alXuv7ZdCg28oPE8nH/Iz73/IUejVaCazqu9elS4ypjiLhK3KfzdSQBnL/g7YfHSlymZKdiOHEo8fJ0qMA==}

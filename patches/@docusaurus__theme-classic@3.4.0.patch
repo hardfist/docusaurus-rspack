@@ -1,0 +1,22 @@
+diff --git a/lib/index.js b/lib/index.js
+index ab4a2a1a0888e7ffbc9d5533a24797807e9289f9..3b767a847ba9a71534e1eebe4514c7d476cadd3c 100644
+--- a/lib/index.js
++++ b/lib/index.js
+@@ -15,7 +15,7 @@ const theme_translations_1 = require("@docusaurus/theme-translations");
+ const translations_1 = require("./translations");
+ const inlineScripts_1 = require("./inlineScripts");
+ const requireFromDocusaurusCore = (0, module_1.createRequire)(require.resolve('@docusaurus/core/package.json'));
+-const ContextReplacementPlugin = requireFromDocusaurusCore('webpack/lib/ContextReplacementPlugin');
++//const ContextReplacementPlugin = requireFromDocusaurusCore('webpack/lib/ContextReplacementPlugin');
+ function getInfimaCSSFile(direction) {
+     return `infima/dist/css/default/default${direction === 'rtl' ? '-rtl' : ''}.css`;
+ }
+@@ -62,7 +62,7 @@ function themeClassic(context, options) {
+                     // This allows better optimization by only bundling those components
+                     // that the user actually needs, because the modules are dynamically
+                     // required and can't be known during compile time.
+-                    new ContextReplacementPlugin(/prismjs[\\/]components$/, new RegExp(`^./(${prismLanguages})$`)),
++                   // new ContextReplacementPlugin(/prismjs[\\/]components$/, new RegExp(`^./(${prismLanguages})$`)),
+                 ],
+             };
+         },
