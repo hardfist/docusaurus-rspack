@@ -40,5 +40,12 @@
   },
   "engines": {
     "node": ">=18.0"
+  },
+  "packageManager": "pnpm@8.14.1+sha1.d039b38e0b20ad012ed548e44267b8d4c88b447a",
+  "pnpm": {
+    "overrides": {
+      "webpack": "npm:@rspack/core@1.0.0-beta.2"
+     }
   }
+  
 }
